@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Alpha.ConsoleApp.Jobs;
 
 namespace Alpha.ConsoleApp
@@ -10,10 +9,12 @@ namespace Alpha.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var types = Assembly.GetExecutingAssembly()
-                  .GetTypes()
-                  .Where(m => m.GetInterfaces().Contains(typeof(IJob)));
-            foreach (var type in types)
+            Execute();
+        }
+
+        public static void Execute()
+        {
+            foreach (var type in Instance.FindInstancesByInterface<IJob>())
             {
                 var job = Activator.CreateInstance(type) as IJob;
                 job.Init();

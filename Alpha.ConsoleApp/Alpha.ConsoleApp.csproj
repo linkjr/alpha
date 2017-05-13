@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Instance.cs" />
     <Compile Include="Jobs\ApiJob.cs" />
     <Compile Include="Jobs\IJob.cs" />
     <Compile Include="Jobs\SingletonJob.cs" />

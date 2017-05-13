@@ -10,7 +10,6 @@ namespace Alpha.ConsoleApp.Jobs
     {
         public void Init()
         {
-            throw new NotImplementedException();
         }
     }
 }
