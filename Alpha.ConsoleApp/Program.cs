@@ -14,7 +14,8 @@ namespace Alpha.ConsoleApp
 
         public static void Execute()
         {
-            foreach (var type in Instance.FindInstancesByInterface<IJob>())
+            var instances = Instance.FindInstancesByInterface<IJob>();
+            foreach (var type in instances)
             {
                 var job = Activator.CreateInstance(type) as IJob;
                 job.Init();

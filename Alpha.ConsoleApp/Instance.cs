@@ -11,10 +11,10 @@ namespace Alpha.ConsoleApp
     {
         public static IEnumerable<Type> FindInstancesByInterface<IType>()
         {
-            var instances = from m in Assembly.GetExecutingAssembly().GetTypes()
+            var subTypes = from m in Assembly.GetExecutingAssembly().GetTypes()
                         where m.GetInterfaces().Contains(typeof(IType))
                         select m;
-            return instances;
+            return subTypes;
         }
     }
 }
