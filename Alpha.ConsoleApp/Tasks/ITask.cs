@@ -8,8 +8,6 @@ namespace Alpha.ConsoleApp.Tasks
 {
     public interface ITask
     {
-        void Init();
-
         Task Execute();
     }
 }
