@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alpha.ConsoleApp.Jobs
+namespace Alpha.ConsoleApp.Tasks
 {
-    public class SingletonJob : IJob
+    public interface ITask
     {
-        public void Init()
-        {
-        }
+        void Init();
+
+        Task Execute();
     }
 }

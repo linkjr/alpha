@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alpha.ConsoleApp.Jobs
+namespace Alpha.ConsoleApp.Tasks
 {
-    public interface IJob
+    public class SingletonTask : BaseTask
     {
-        void Init();
+        public override void Init()
+        {
+
+        }
     }
 }

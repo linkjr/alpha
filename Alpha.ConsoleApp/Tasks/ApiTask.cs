@@ -7,11 +7,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace Alpha.ConsoleApp.Jobs
+namespace Alpha.ConsoleApp.Tasks
 {
-    public class ApiJob : IJob
+    public class ApiTask : BaseTask
     {
-        public void Init()
+        public override void Init()
         {
             var client = new HttpClient();
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, "http://www.algraph.com/rest/rest/Values/1");
@@ -28,7 +28,6 @@ namespace Alpha.ConsoleApp.Jobs
                     Console.WriteLine(result);
                 });
             task.Wait();
-            Console.ReadLine();
         }
     }
 }

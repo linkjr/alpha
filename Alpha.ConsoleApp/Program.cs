@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Alpha.ConsoleApp.Jobs;
+using System.Threading.Tasks;
+using Alpha.ConsoleApp.Tasks;
 
 namespace Alpha.ConsoleApp
 {
@@ -10,15 +11,21 @@ namespace Alpha.ConsoleApp
         static void Main(string[] args)
         {
             Execute();
+            Console.ReadLine();
         }
 
-        public static void Execute()
+        public static async void Execute()
         {
-            var instances = Instance.FindInstancesByInterface<IJob>();
+            var instances = Instance.FindInstancesByInterface<ITask>();
+            //Parallel.ForEach(instances, async m =>
+            //{
+            //    var job = Activator.CreateInstance(m) as ITask;
+            //    await job.Execute();
+            //});
             foreach (var type in instances)
             {
-                var job = Activator.CreateInstance(type) as IJob;
-                job.Init();
+                var job = Activator.CreateInstance(type) as ITask;
+                await job.Execute();
             }
         }
     }
