@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alpha.ConsoleApp.Tasks
+namespace Alpha.ConsoleApp.Tests
 {
-    public class SingletonTask : BaseTask
+    public class SingletonTest : BaseTest
     {
         public override void Init()
         {

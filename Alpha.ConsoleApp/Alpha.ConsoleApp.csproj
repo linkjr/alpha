@@ -47,17 +47,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Instance.cs" />
-    <Compile Include="Tasks\ApiTask.cs" />
-    <Compile Include="Tasks\CloneTask.cs" />
-    <Compile Include="Tasks\ITask.cs" />
-    <Compile Include="Tasks\SingletonTask.cs" />
+    <Compile Include="Tests\ApiTest.cs" />
+    <Compile Include="Tests\CloneTest.cs" />
+    <Compile Include="Tests\ITest.cs" />
+    <Compile Include="Tests\ObserverTest.cs" />
+    <Compile Include="Tests\SingletonTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tasks\BaseTask.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPattern\DesignPattern.csproj">
+      <Project>{07bd8532-9273-40bc-af4d-096ab9504d45}</Project>
+      <Name>DesignPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,9 +7,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace Alpha.ConsoleApp.Tasks
+namespace Alpha.ConsoleApp.Tests
 {
-    public class ApiTask : BaseTask
+    public class ApiTest : BaseTest
     {
         public override void Init()
         {

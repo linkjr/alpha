@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Alpha.ConsoleApp.Tasks;
+using Alpha.ConsoleApp.Tests;
 
 namespace Alpha.ConsoleApp
 {
@@ -16,7 +16,7 @@ namespace Alpha.ConsoleApp
 
         public static async void Execute()
         {
-            var instances = Instance.FindInstancesByInterface<ITask>();
+            var instances = Instance.FindInstancesByInterface<ITest>();
             //Parallel.ForEach(instances, async m =>
             //{
             //    var job = Activator.CreateInstance(m) as ITask;
@@ -24,7 +24,7 @@ namespace Alpha.ConsoleApp
             //});
             foreach (var type in instances)
             {
-                var job = Activator.CreateInstance(type) as ITask;
+                var job = Activator.CreateInstance(type) as ITest;
                 await job.Execute();
             }
         }

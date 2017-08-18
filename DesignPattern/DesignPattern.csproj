@@ -39,9 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Observer\AlarmObserver.cs" />
+    <Compile Include="Observer\BoiledEventArgs.cs" />
+    <Compile Include="Observer\Meter.cs" />
+    <Compile Include="Observer\MeterAlarm.cs" />
+    <Compile Include="Observer\Ammeter.cs" />
+    <Compile Include="Observer\MeterSMS.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Observer\Disposer.cs" />
+    <Compile Include="Observer\ScreenObserver.cs" />
+    <Compile Include="Observer\Heater.cs" />
+    <Compile Include="Observer\Subject.cs" />
     <Compile Include="Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alpha.ConsoleApp.Tasks
+namespace Alpha.ConsoleApp.Tests
 {
-    public abstract class BaseTask : ITask
+    public abstract class BaseTest : ITest
     {
         public Task Execute()
         {
