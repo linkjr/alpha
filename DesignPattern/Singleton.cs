@@ -32,7 +32,7 @@ namespace DesignPattern
         }
     }
 
-    //Use sealed ensure not be inherited by other class which can be inherited.
+    //Use sealed ensure not be inherited by other class which can be initialized.
     public sealed class Singleton
     {
         private static Singleton _instance;
