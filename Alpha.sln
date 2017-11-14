@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.ConsoleApp", "Alpha.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{07BD8532-9273-40BC-AF4D-096AB9504D45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Proxy", "Alpha.Proxy\Alpha.Proxy.csproj", "{BCD788F9-B5C0-4F2C-A80A-8E67A95A9703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{07BD8532-9273-40BC-AF4D-096AB9504D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07BD8532-9273-40BC-AF4D-096AB9504D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07BD8532-9273-40BC-AF4D-096AB9504D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD788F9-B5C0-4F2C-A80A-8E67A95A9703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD788F9-B5C0-4F2C-A80A-8E67A95A9703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD788F9-B5C0-4F2C-A80A-8E67A95A9703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD788F9-B5C0-4F2C-A80A-8E67A95A9703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
